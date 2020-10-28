@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <div class="card-header">
+                Accout register
+            </div>
+            <div class="card-body">
+                <form action="/users/signup" method="POST">
+                    <div class="form-group"> <!-- Al agregar la propiedad de handlebars guardamos los datos que el usuario ya había ingresado para que no los vuelva a escribir. -->
+                        <input type="text" name="name" placeholder="Name" value="{{name}}"
+                            class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email" value="{{email}}"
+                            class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password"
+                            placeholder="Password"
+                            class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="confirm_Password"
+                            placeholder="Confirm Password"
+                            class="form-control">
+                    </div>
+                    <button class="btn btn-primary btn-block">
+                        Signup
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
